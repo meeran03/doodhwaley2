@@ -1,0 +1,2 @@
+1.celery -A doodhwaley beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+2.celery -A doodhwaley worker -l info
