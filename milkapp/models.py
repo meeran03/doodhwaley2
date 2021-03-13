@@ -40,7 +40,6 @@ class Product(models.Model):
     image = models.ImageField(height_field=None, width_field=None, max_length=None)
     price = models.IntegerField()
     description = models.TextField()
-    quantity = models.IntegerField()
     discount = models.IntegerField()
     category = models.ForeignKey(ProductCategory,on_delete=models.CASCADE)
     featured = models.BooleanField(default=False)

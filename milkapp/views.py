@@ -107,7 +107,7 @@ class StoreViewSet(viewsets.ModelViewSet):
 
 class CustomerViewSet(viewsets.ModelViewSet):
     serializer_class = CustomerSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Customer.objects.all()
 
 class OrderViewSet(viewsets.ModelViewSet):
